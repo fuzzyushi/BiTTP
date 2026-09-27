@@ -1,0 +1,16 @@
+# Per-run configuration (manuscript Appendix E, Table A4)
+dataset: "dataset2"
+protocol: "in-distribution cross-validation, full label space (14 tactics / 96 techniques)"
+runs:
+  - run_id: 1
+    seed: 202401
+  - run_id: 2
+    seed: 202402
+  - run_id: 3
+    seed: 202403
+paired_bootstrap:
+  resamples: 10000
+  ci: 0.95
+  baseline: "APTREC"
+  metric: "tactic micro-F1 difference"
+multiple_comparison: "Benjamini-Hochberg over per-tactic comparisons"
