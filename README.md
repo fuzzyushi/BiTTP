@@ -13,18 +13,17 @@ published in the public repository upon acceptance.
 ```
 BiTTP-REVISION/
 ├── README.md                      (this file)
-├── code/
-│   ├── bittp_core.py              (full pipeline: alignment, retrieval,
-│   │                               gates, aggregator, self-training loop,
-│   │                               multi-label / single-label metrics)
-│   ├── manifest_exporter.py       (split-manifest exporter, Appendix B schema)
-│   ├── prompts/                   (executable prompt templates, Appendix C)
-│   │   ├── forward_generation.txt
-│   │   ├── reverse_generation.txt
-│   │   ├── technique_recognition.txt
-│   │   ├── tactic_reasoning.txt
-│   │   └── cross_view_verification.txt
-│   └── configs/
+│── bittp_core.py              (full pipeline: alignment, retrieval,
+│                               gates, aggregator, self-training loop,
+│                               multi-label / single-label metrics)
+│── manifest_exporter.py       (split-manifest exporter, Appendix B schema)
+│── prompts/                   (executable prompt templates, Appendix C)
+│   ├── forward_generation.txt
+│   ├── reverse_generation.txt
+│   ├── technique_recognition.txt
+│   ├── tactic_reasoning.txt
+│   └── cross_view_verification.txt
+│── configs/
 │       ├── main.yaml              (Table 3 hyperparameters)
 │       ├── low_resource.yaml      (Section 5.6, Table 10, Figure 7)
 │       └── per_run.yaml           (Appendix E, Table A4)
