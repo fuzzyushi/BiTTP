@@ -1,0 +1,17 @@
+# Low-resource experiment configuration (manuscript Section 5.6, Table 10, Figure 7)
+seeds_per_tactic: [100, 300, 500, 700, 900, 1100, 1300, 1500]
+nominal_total: [1400, 4200, 7000, 9800, 12600, 15400, 18200, 21000]
+dataset: "dataset1"
+protocol: "in-distribution cross-validation"
+methods:
+  - name: "BiTTP"
+    retrieval_grounding: true
+    consistency_gate: true
+  - name: "conventional_self_training"
+    retrieval_grounding: false
+    consistency_gate: false   # same seeds, same unlabeled pool, same consensus+confidence gates
+  - name: "aptrec_style"
+    labeled_seeds_only: true   # no unlabeled pool
+resampling: "complete nominal budget by resampling when a tactic has fewer eligible examples"
+metric: "technique F1 (single-label; micro-F1 equals accuracy)"
+confidence_intervals: "95%, 5-fold cross-validation"
