@@ -1,0 +1,1 @@
+You are given the ATT&CK technique definition {definition}. Write a plausible tactical subgraph, as JSON with fields type, path, start_time, host_uuid, source, target, that an analyst would attribute to this technique.

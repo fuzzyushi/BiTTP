@@ -1,0 +1,1 @@
+You are given an Atomic Red Team test {script_name}. Extract the technique identifier, platform constraints, and command sequence, then emit a tactical subgraph as JSON with fields type, path, start_time, host_uuid, source, target.

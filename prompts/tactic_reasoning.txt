@@ -1,0 +1,1 @@
+You are given recognized techniques {techniques} with confidences {confidences}. Return JSON with tactic and justification, where tactic must be one of the 14 ATT&CK tactics.

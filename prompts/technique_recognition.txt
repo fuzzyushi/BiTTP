@@ -1,0 +1,1 @@
+You are given an audit subgraph {subgraph} and the top-k technique definitions {candidates}. Return JSON with technique_id, confidence, rationale, where technique_id must be one of the candidate identifiers.
