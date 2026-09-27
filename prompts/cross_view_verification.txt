@@ -1,0 +1,1 @@
+Retrieve the definition of {technique_id}, encode it and the input subgraph, and report the cosine similarity between the two embeddings.
